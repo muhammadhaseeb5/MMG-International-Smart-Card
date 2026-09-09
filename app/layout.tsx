@@ -13,9 +13,36 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://mmg-international-smart-card.muhammadhaseeb514006.chatgpt.site'),
   title: 'MMG International | Digital Business Card',
   description: 'Connect with MMG International in Faisalabad, Pakistan. Call, WhatsApp, email, find our location, and review us on Google.',
   icons: { icon: '/mmg-logo.jpeg', apple: '/mmg-logo.jpeg' },
+  alternates: { canonical: '/' },
+  openGraph: {
+    type: 'website',
+    locale: 'en_PK',
+    url: '/',
+    siteName: 'MMG International',
+    title: 'MMG International | Digital Business Card',
+    description: 'Call, WhatsApp, email or visit MMG International in Faisalabad, Pakistan.',
+    images: [{
+      url: 'https://mmg-international-smart-card.muhammadhaseeb514006.chatgpt.site/mmg-logo.jpeg',
+      secureUrl: 'https://mmg-international-smart-card.muhammadhaseeb514006.chatgpt.site/mmg-logo.jpeg',
+      width: 1254,
+      height: 1254,
+      type: 'image/jpeg',
+      alt: 'MMG International official logo',
+    }],
+  },
+  twitter: {
+    card: 'summary',
+    title: 'MMG International | Digital Business Card',
+    description: 'Call, WhatsApp, email or visit MMG International in Faisalabad, Pakistan.',
+    images: [{
+      url: 'https://mmg-international-smart-card.muhammadhaseeb514006.chatgpt.site/mmg-logo.jpeg',
+      alt: 'MMG International official logo',
+    }],
+  },
 };
 
 export default function RootLayout({
