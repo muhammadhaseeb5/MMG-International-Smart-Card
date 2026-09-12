@@ -80,6 +80,7 @@ h1 span { color:#a78543; }
 .brand-icon>svg { width:23px; height:23px; }
 .facebook-link .brand-icon { color:#2063b7; background:#eaf1fa; }
 .instagram-link .brand-icon { color:#ac3863; background:#faeaf0; }
+.tiktok-link .brand-icon { color:#111; background:#e9f8f7; }
 .community-link .brand-icon,.channel-link .brand-icon { color:#237749; background:#eaf3e9; }
 .brand-icon .icon-badge { position:absolute; bottom:-4px; right:-5px; width:17px; height:17px; padding:2px; background:#fffdf7; border-radius:50%; stroke-width:2; }
 .social-link strong { display:block; font-size:14px; font-weight:600; }

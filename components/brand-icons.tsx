@@ -17,3 +17,7 @@ export function FacebookIcon(props: IconProps) {
 export function InstagramIcon(props: IconProps) {
   return <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" aria-hidden="true" {...props}><rect x="3" y="3" width="18" height="18" rx="5" /><circle cx="12" cy="12" r="4.2" /><circle cx="17.6" cy="6.5" r="1" fill="currentColor" stroke="none" /></svg>;
 }
+
+export function TikTokIcon(props: IconProps) {
+  return <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" {...props}><path d="M16.6 5.82A4.85 4.85 0 0 1 13.79 3h-3.2v12.7a2.68 2.68 0 1 1-2.32-2.66V9.8a5.9 5.9 0 1 0 5.52 5.88V9.24a8.07 8.07 0 0 0 4.72 1.51V7.58a4.9 4.9 0 0 1-1.91-.55Z" /></svg>;
+}
