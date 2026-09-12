@@ -78,9 +78,9 @@ export default function Home() {
                 </div>
                 <div className="identity-rule" aria-hidden="true"><span />✦<span /></div>
                 <p className="identity-note">One card.<br /><em>Every connection.</em></p>
-                <a className="identity-website" href={website} target="_blank" rel="noopener noreferrer" aria-label="Shop at mmginternational.store">
+                <a className="identity-website" href="https://mmginternational.store/catalogue/" target="_blank" rel="noopener noreferrer" aria-label="View Ware House Catalogue at mmginternational.store">
                   <ShopCartIcon />
-                  <span><small>SHOP ONLINE</small><strong>mmginternational.store</strong></span>
+                  <span><small>Ware House Catalogue</small><strong>mmginternational.store</strong></span>
                   <ArrowUpRight className="website-arrow" aria-hidden="true" />
                 </a>
               </div>

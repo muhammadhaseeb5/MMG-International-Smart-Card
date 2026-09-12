@@ -46,7 +46,7 @@ h1 span { color:#a78543; }
 .identity-note { font:26px/1.35 Georgia,'Times New Roman',serif; margin:0; color:#554a33; }
 .identity-note em { color:#9b7838; font-weight:400; }
 .identity-website { display:flex; align-items:center; width:min(100%,270px); gap:11px; padding:13px 14px; margin-top:28px; color:#fff; text-align:left; border:1px solid #ba1823; border-radius:13px; background:linear-gradient(130deg,#de2531,#b51220); box-shadow:0 8px 18px #b5122028; transition:transform .2s,box-shadow .2s; }
-.identity-website>svg:first-child { width:23px; height:23px; flex-shrink:0; stroke-width:1.7; }
+.identity-website>svg:first-child { width:36px; height:36px; flex-shrink:0; }
 .identity-website span { min-width:0; }
 .identity-website small,.identity-website strong { display:block; }
 .identity-website small { margin-bottom:3px; color:#fff; font-size:9px; font-weight:600; letter-spacing:.16em; }
