@@ -30,13 +30,14 @@ a:focus-visible,button:focus-visible { outline:3px solid #9b7838; outline-offset
 .identity-eyebrow { font-size:11px; letter-spacing:.19em; color:#786540; margin-bottom:30px; }
 .logo-frame { width:154px; height:154px; border-radius:18px; padding:5px; background:linear-gradient(135deg,#9f7b31,#f6e9b7 35%,#af8d49 65%,#eee0ad); box-shadow:0 10px 28px #71572420; }
 .logo-frame img { display:block; width:100%; height:100%; object-fit:contain; border-radius:13px; border:3px solid #fffaf0; }
-.identity-copy { margin-top:25px; }
+.identity-copy { width:100%; margin-top:25px; }
 .personal-number { margin:12px 0 14px; color:#74694f; font-size:15px; letter-spacing:.05em; }
-.personal-actions { display:flex; justify-content:center; gap:10px; }
-.personal-actions a { display:inline-flex; align-items:center; justify-content:center; gap:8px; padding:10px 15px; border:1px solid #c5b38d80; border-radius:10px; background:#fffaf0; font-size:13px; font-weight:600; transition:background .2s; }
-.personal-actions a:first-child { color:#17643f; }
-.personal-actions a:hover { background:#fff; }
-.personal-actions svg { width:18px; height:18px; }
+.personal-actions { display:flex; flex-direction:column; align-items:center; gap:12px; }
+.personal-actions a { display:flex; align-items:center; justify-content:flex-start; width:min(100%,320px); min-height:80px; gap:14px; padding:16px 20px; border:1px solid #c5b38d80; border-radius:13px; background:#fffaf0; font-size:18px; font-weight:700; box-shadow:0 8px 18px #71572416; transition:transform .2s,box-shadow .2s,background .2s; }
+.personal-actions a:first-child { color:#fff; border-color:#217d53; background:linear-gradient(130deg,#289361,#17643f); }
+.personal-actions a:last-child { color:#fff; border-color:#444236; background:linear-gradient(130deg,#504d3b,#303128); }
+.personal-actions a:hover { transform:translateY(-2px); box-shadow:0 11px 22px #71572428; }
+.personal-actions svg { width:40px; height:40px; flex-shrink:0; }
 .company-initials { font-size:15px; letter-spacing:.48em; padding-left:.48em; margin:0 0 4px; font-weight:600; color:#735d31; }
 h1 { margin:0; font-family:Georgia,'Times New Roman',serif; font-weight:400; font-size:clamp(32px,3.6vw,43px); letter-spacing:-.045em; line-height:1.2; }
 h1 span { color:#a78543; }
