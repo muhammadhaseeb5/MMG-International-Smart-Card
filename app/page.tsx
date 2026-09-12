@@ -3,8 +3,8 @@
 /* oxlint-disable next/no-img-element -- This page also runs as a static Vite app on Netlify without the Next image runtime. */
 
 import { useEffect, useRef, useState, type PointerEvent } from 'react';
-import { ArrowUpRight, Mail, MapPin, Pause, Phone, Play, Radio, ShoppingBasket, Star, Users } from 'lucide-react';
-import { WhatsAppIcon, FacebookIcon, InstagramIcon } from '@/components/brand-icons';
+import { ArrowUpRight, Mail, MapPin, Pause, Phone, Play, Radio, Star, Users } from 'lucide-react';
+import { WhatsAppIcon, FacebookIcon, InstagramIcon, ShopCartIcon } from '@/components/brand-icons';
 
 const website = 'https://mmginternational.store/';
 const maps = 'https://maps.app.goo.gl/1RrrCTT1iW289HPz9?g_st=awb';
@@ -68,11 +68,18 @@ export default function Home() {
               <div className="identity">
                 <span className="identity-eyebrow">A CONNECTION THAT MATTERS</span>
                 <div className="logo-frame"><img src="/mmg-logo.jpeg" alt="MMG International official logo" width="1254" height="1254" fetchPriority="high" /></div>
-                <div className="identity-copy"><p className="company-initials">MMG</p><h1>International<span>.</span></h1><p className="home-location"><MapPin size={15} /> Faisalabad, Pakistan</p></div>
+                <div className="identity-copy">
+                  <h1>A R Pasha</h1>
+                  <p className="personal-number">+923009658666</p>
+                  <div className="personal-actions">
+                    <a href="https://wa.me/923009658666" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp A R Pasha at +923009658666"><WhatsAppIcon />WhatsApp</a>
+                    <a href="tel:+923009658666" aria-label="Call A R Pasha at +923009658666"><Phone />Call</a>
+                  </div>
+                </div>
                 <div className="identity-rule" aria-hidden="true"><span />✦<span /></div>
                 <p className="identity-note">One card.<br /><em>Every connection.</em></p>
                 <a className="identity-website" href={website} target="_blank" rel="noopener noreferrer" aria-label="Shop at mmginternational.store">
-                  <ShoppingBasket aria-hidden="true" />
+                  <ShopCartIcon />
                   <span><small>SHOP ONLINE</small><strong>mmginternational.store</strong></span>
                   <ArrowUpRight className="website-arrow" aria-hidden="true" />
                 </a>

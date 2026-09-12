@@ -31,6 +31,12 @@ a:focus-visible,button:focus-visible { outline:3px solid #9b7838; outline-offset
 .logo-frame { width:154px; height:154px; border-radius:18px; padding:5px; background:linear-gradient(135deg,#9f7b31,#f6e9b7 35%,#af8d49 65%,#eee0ad); box-shadow:0 10px 28px #71572420; }
 .logo-frame img { display:block; width:100%; height:100%; object-fit:contain; border-radius:13px; border:3px solid #fffaf0; }
 .identity-copy { margin-top:25px; }
+.personal-number { margin:12px 0 14px; color:#74694f; font-size:15px; letter-spacing:.05em; }
+.personal-actions { display:flex; justify-content:center; gap:10px; }
+.personal-actions a { display:inline-flex; align-items:center; justify-content:center; gap:8px; padding:10px 15px; border:1px solid #c5b38d80; border-radius:10px; background:#fffaf0; font-size:13px; font-weight:600; transition:background .2s; }
+.personal-actions a:first-child { color:#17643f; }
+.personal-actions a:hover { background:#fff; }
+.personal-actions svg { width:18px; height:18px; }
 .company-initials { font-size:15px; letter-spacing:.48em; padding-left:.48em; margin:0 0 4px; font-weight:600; color:#735d31; }
 h1 { margin:0; font-family:Georgia,'Times New Roman',serif; font-weight:400; font-size:clamp(32px,3.6vw,43px); letter-spacing:-.045em; line-height:1.2; }
 h1 span { color:#a78543; }
@@ -39,11 +45,11 @@ h1 span { color:#a78543; }
 .identity-rule span { height:1px; width:42px; background:#bda67580; }
 .identity-note { font:26px/1.35 Georgia,'Times New Roman',serif; margin:0; color:#554a33; }
 .identity-note em { color:#9b7838; font-weight:400; }
-.identity-website { display:flex; align-items:center; width:min(100%,270px); gap:11px; padding:13px 14px; margin-top:28px; color:#fffaf0; text-align:left; border:1px solid #b79450; border-radius:13px; background:linear-gradient(130deg,#9b7838,#715425); box-shadow:0 8px 18px #71572428; transition:transform .2s,box-shadow .2s; }
+.identity-website { display:flex; align-items:center; width:min(100%,270px); gap:11px; padding:13px 14px; margin-top:28px; color:#fff; text-align:left; border:1px solid #ba1823; border-radius:13px; background:linear-gradient(130deg,#de2531,#b51220); box-shadow:0 8px 18px #b5122028; transition:transform .2s,box-shadow .2s; }
 .identity-website>svg:first-child { width:23px; height:23px; flex-shrink:0; stroke-width:1.7; }
 .identity-website span { min-width:0; }
 .identity-website small,.identity-website strong { display:block; }
-.identity-website small { margin-bottom:3px; color:#f3dfb4; font-size:9px; font-weight:600; letter-spacing:.16em; }
+.identity-website small { margin-bottom:3px; color:#fff; font-size:9px; font-weight:600; letter-spacing:.16em; }
 .identity-website strong { overflow-wrap:anywhere; font-size:13px; font-weight:600; letter-spacing:.01em; }
 .identity-website .website-arrow { width:16px; height:16px; margin-left:auto; flex-shrink:0; }
 .connections { padding:34px; min-width:0; }
