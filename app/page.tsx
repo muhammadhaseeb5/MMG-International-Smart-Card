@@ -3,7 +3,7 @@
 /* oxlint-disable next/no-img-element -- This page also runs as a static Vite app on Netlify without the Next image runtime. */
 
 import { useEffect, useRef, useState, type PointerEvent } from 'react';
-import { ArrowUpRight, Mail, MapPin, Pause, Phone, Play, Radio, Star, Users } from 'lucide-react';
+import { ArrowUpRight, Mail, MapPin, Pause, Phone, Play, Radio, ShoppingBasket, Star, Users } from 'lucide-react';
 import { WhatsAppIcon, FacebookIcon, InstagramIcon } from '@/components/brand-icons';
 
 const website = 'https://mmginternational.store/';
@@ -71,14 +71,18 @@ export default function Home() {
                 <div className="identity-copy"><p className="company-initials">MMG</p><h1>International<span>.</span></h1><p className="home-location"><MapPin size={15} /> Faisalabad, Pakistan</p></div>
                 <div className="identity-rule" aria-hidden="true"><span />✦<span /></div>
                 <p className="identity-note">One card.<br /><em>Every connection.</em></p>
-                <a className="identity-website" href={website} target="_blank" rel="noopener noreferrer">mmginternational.store <ArrowUpRight size={16} /></a>
+                <a className="identity-website" href={website} target="_blank" rel="noopener noreferrer" aria-label="Shop at mmginternational.store">
+                  <ShoppingBasket aria-hidden="true" />
+                  <span><small>SHOP ONLINE</small><strong>mmginternational.store</strong></span>
+                  <ArrowUpRight className="website-arrow" aria-hidden="true" />
+                </a>
               </div>
               <div className="connections">
                 <div className="section-heading"><span>LET’S CONNECT</span><span className="heading-line" /></div>
                 <div className="quick-actions">
                   <a className="action-tile call-tile" href="tel:+923219658666"><span className="tile-icon"><Phone /></span><span><strong>Call us</strong><small>+92 321 9658666</small></span><ArrowUpRight className="tile-arrow" /></a>
                   <a className="action-tile whatsapp-tile" href="https://wa.me/923219658666" target="_blank" rel="noopener noreferrer"><span className="tile-icon"><WhatsAppIcon /></span><span><strong>WhatsApp</strong><small>Start a conversation</small></span><ArrowUpRight className="tile-arrow" /></a>
-                  <a className="action-tile secondary-tile" href="mailto:mmgsinternational@gmail.com"><span className="tile-icon"><Mail /></span><span><strong>Email</strong><small>Get in touch</small></span><ArrowUpRight className="tile-arrow" /></a>
+                  <a className="action-tile secondary-tile" href="mailto:mmginternationalofficial@gmail.com"><span className="tile-icon"><Mail /></span><span><strong>Email</strong><small>Get in touch</small></span><ArrowUpRight className="tile-arrow" /></a>
                   <a className="action-tile secondary-tile" href={maps} target="_blank" rel="noopener noreferrer"><span className="tile-icon"><MapPin /></span><span><strong>Location</strong><small>Find our office</small></span><ArrowUpRight className="tile-arrow" /></a>
                 </div>
                 <div className="social-section">
@@ -95,7 +99,7 @@ export default function Home() {
             </div>
             <footer className="card-footer">
               <a href={maps} target="_blank" rel="noopener noreferrer"><MapPin /><span>Masha Allah Plaza, Habib Center Street<br /><strong>Factory Area, Faisalabad, Pakistan</strong></span></a>
-              <a href="mailto:mmgsinternational@gmail.com"><Mail /><span>mmgsinternational@gmail.com</span></a>
+              <a href="mailto:mmginternationalofficial@gmail.com"><Mail /><span>mmginternationalofficial@gmail.com</span></a>
             </footer>
           </article>
         </div>
