@@ -9,6 +9,8 @@
     "dev": "vinext dev",
     "build": "vinext build",
     "build:netlify": "vite build --config vite.netlify.config.ts",
+    "build:static": "vite build --config vite.netlify.config.ts",
+    "deploy:cloudflare": "npm run build:static && wrangler pages deploy dist --project-name mmg-international-smart-card",
     "start": "wrangler dev --config dist/server/wrangler.json",
     "lint": "oxlint",
     "format": "oxfmt"
