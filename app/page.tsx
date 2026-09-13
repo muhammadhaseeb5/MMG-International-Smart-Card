@@ -70,10 +70,17 @@ export default function Home() {
                 <div className="logo-frame"><img src="/mmg-logo.jpeg" alt="MMG International official logo" width="1254" height="1254" fetchPriority="high" /></div>
                 <div className="identity-copy">
                   <h1>A R Pasha</h1>
-                  <p className="personal-number">+923009658666</p>
                   <div className="personal-actions">
-                    <a href="https://wa.me/923009658666" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp A R Pasha at +923009658666"><WhatsAppIcon />WhatsApp</a>
-                    <a href="tel:+923009658666" aria-label="Call A R Pasha at +923009658666"><Phone />Call</a>
+                    <a className="personal-action personal-call" href="tel:+923009658666" aria-label="Call A R Pasha at +923009658666">
+                      <Phone />
+                      <span><strong>Call us</strong><small>+92 300 9658666</small></span>
+                      <ArrowUpRight aria-hidden="true" />
+                    </a>
+                    <a className="personal-action personal-whatsapp" href="https://wa.me/923009658666" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp A R Pasha at +923009658666">
+                      <WhatsAppIcon />
+                      <span><strong>WhatsApp</strong><small>Start a conversation</small></span>
+                      <ArrowUpRight aria-hidden="true" />
+                    </a>
                   </div>
                 </div>
                 <div className="identity-rule" aria-hidden="true"><span />✦<span /></div>
